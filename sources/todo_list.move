@@ -3,6 +3,17 @@ module hello_world::todo_list;
 
 use std::string::String;
 
+//let y: u64 = 0; // immutable variable  
+//let y = 42u64; // immutable variable 
+
+//let z: u16 = (x as u16) + ((y as u16) + 1); // type casting
+
+//move does not support overflow and underflow
+//let x = 255u8;
+//let y = 1u8;
+
+
+
 /// List of todos. Can be managed by the owner and shared with others.
 public struct TodoList has key, store {
     id: UID,
