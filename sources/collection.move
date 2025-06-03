@@ -1,7 +1,6 @@
 module hello_world::collection;
 
 use sui::bag::{ Self, Bag};
-use sui::tx_context::TxContext;
 
 public fun create_bag(ctx: &mut TxContext): Bag {
     bag::new(ctx)
