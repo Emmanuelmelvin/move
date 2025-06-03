@@ -18,6 +18,15 @@ public fun create_data(
     Data{number, string, value}
 }
 
+public fun get_field_from_data(obj: Data, number: u64): bool {
+    if(obj.number == number) {
+        return true
+    }else{
+        return false
+    }
+    
+} 
+
 public fun encode_data_struct(obj: Data): vector<u8> {
    bcs::to_bytes(&obj)
 
